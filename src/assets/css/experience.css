@@ -1,0 +1,27 @@
+.activities li::after{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    bottom: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #e3cecef2;
+    transform: translateX(-50%);
+}
+.activities li:hover::after{
+    left: -0.5%;
+    background-color: #ff963c;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+@media screen and (max-width:550px) {
+    .activities li:hover::after{
+        top: 6%;
+        left: -1.5%;
+        background-color: #ff963c;
+        transform: scale(1.1);
+        transition: all 0.2s;
+    }
+}
